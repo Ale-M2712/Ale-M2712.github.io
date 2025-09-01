@@ -1,8 +1,8 @@
 /* paleta de colores 
-Azul profundo   (#09456C)
-Teal vibrante   (#026F6E)
-Teal claro      (#1CA39E)
-Gris humo       (#F5F5F5)
+Azul profundo   (#09456C) 4
+Teal vibrante   (#026F6E) 3
+Teal claro      (#1CA39E) 2
+Gris humo       (#F5F5F5) 1
 Blanco          (#FFFFFF)
 Negro carbón    (#160D18) 
 */
@@ -39,7 +39,7 @@ h2 {
 }
 /* Sección completa con fondo celeste */
 .about {
-  background-color: #026F6E;
+  background-color: #1CA39E;
   width: 100%;
   padding: 2vw 0; /* espacio vertical */
 }
@@ -51,52 +51,91 @@ h2 {
   padding: 1vw;
   color: white;
 } /*hasta aca anda todo*/
-.skills, .projects, .contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+
+/* skills */
+.skills{
+  text-align: center;
+  background-color: #026F6E;
 }
 
-.card {
+.skills h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0;
+  padding-top : 2rem;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.skill-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #1CA39E;
   padding: 1rem;
   border-radius: 8px;
-  color: #fff;
-  transition: background-color 0.3s;
-  position: relative;
+  color: white;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  text-align: center;
 }
 
-.card:hover {
-  background-color: #09456C;
+.skill-card img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
 }
 
-.contact .card {
-  background-color: #160D18;
+.skill-card span {
+  font-size: 0.9rem;
 }
 
-.contact .card:hover {
-  background-color: #23145B;
-}
-
-.tooltip::after {
-  content: attr(data-tooltip);
-  visibility: hidden;
-  opacity: 0;
+/* Tooltip personalizado */
+.tooltip {
   position: absolute;
   bottom: 110%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #23145B;
-  color: #fff;
+  color: white;
   padding: 0.5rem;
   border-radius: 4px;
   width: 220px;
   text-align: left;
-  transition: opacity 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
   z-index: 10;
+  white-space: pre-line;
 }
 
-.tooltip:hover::after {
+.skill-card:hover .tooltip {
   visibility: visible;
   opacity: 1;
-} 
+}
+.skill-card:hover {
+  background-color: #15807C;
+  transition: background-color 0.3s ease; /* ← tono más oscuro */
+}
+
+
+
+/* dashboards & projects */
+.projects {
+  
+}
+.contact {
+  
+}
