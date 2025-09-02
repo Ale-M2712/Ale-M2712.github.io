@@ -1,0 +1,14 @@
+[
+  {
+    "titulo": "Dashboard de Pricing",
+    "imagen": "dashboards/dashboard_pricing.png",
+    "tecnologias": ["Power BI","python","jupyter"],
+    "descripcion": "Análisis de precios por segmento y evolución temporal. Incluye filtros dinámicos y KPIs clave."
+  },
+  {
+    "titulo": "Dashboard de economia",
+    "imagen": "dashboards/dashboard_ventas.png",
+    "tecnologias": ["Excel", "Power BI"],
+    "descripcion": "Seguimiento de ventas mensuales, comparativo por región y alertas de rendimiento."
+  }
+]
