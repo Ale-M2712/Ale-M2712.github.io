@@ -82,7 +82,9 @@
 
     </div>
   </section>
-<section class="gallery">
+
+
+<section class="gallery"><!--dashboards-->
   <h2 class="dashboard-title">Dashboards</h2>
 
 <ul class="dashboard-carousel">
@@ -111,19 +113,35 @@
 </div>
 
 </section>
-<section class="gallery">
+
+
+<section class="gallery"><!--analisis completos-->
   <h2 class="dashboard-title">analisis completos</h2>
 
-<ul class="dashboard-carousel">
+<ul class="dashboard-carousel proyectos-carousel">
   <li>
     <img src="dashboards/dashboard_pricing.png" alt="Dashboard de Pricing" />
     <div class="overlay">
       <h2>Dashboard de Pricing</h2>
       <p>Análisis de precios por segmento y evolución temporal.</p>
+      <p>[ power BI ] [ python ] [ jupyter ]</p>
+    </div>
+  </li>
+
+   <li>
+    <img src="dashboards/dashboard_ventas.png" alt="Dashboard de ventas" />
+    <div class="overlay">
+      <h2>Dashboard de Pricing</h2>
+      <p>Análisis de precios por segmento y evolución temporal.</p>
+      <p>[ power BI ] [ python ] [ jupyter ]</p>
     </div>
   </li>
   <!-- más tarjetas... -->
 </ul>
+<div class="scroll-buttons">
+  <button id="scroll-left-proyectos">←</button>
+  <button id="scroll-right-proyectos">→</button>
+</div>
 </section>
 
   <section class="contact">
@@ -143,6 +161,18 @@
   document.getElementById('scroll-right').addEventListener('click', () => {
     carousel.scrollBy({ left: 400, behavior: 'smooth' });
   });
+</script>
+
+<script>
+  const proyectosCarousel = document.querySelector('.proyectos-carousel');
+
+document.getElementById('scroll-left-proyectos').addEventListener('click', () => {
+  proyectosCarousel.scrollBy({ left: -400, behavior: 'smooth' });
+});
+
+document.getElementById('scroll-right-proyectos').addEventListener('click', () => {
+  proyectosCarousel.scrollBy({ left: 400, behavior: 'smooth' });
+});
 </script>
 </body>
 </html>

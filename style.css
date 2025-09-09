@@ -169,7 +169,7 @@ h2 {
   transition: filter 0.3s ease;
 }
 
-.dashboard-carousel li:hover img {
+.dashboard-carousel  li:hover img {
   filter: brightness(50%);
 }
 
@@ -192,6 +192,10 @@ h2 {
 }
 
 .dashboard-carousel li:hover .overlay {
+  opacity: 1;
+}
+
+.proyect-carousel li:hover .overlay {
   opacity: 1;
 }
 
