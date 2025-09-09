@@ -212,3 +212,26 @@ html {
   background-color: #09456C;
   padding: 3rem 0;
 }
+
+.scroll-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.scroll-buttons button {
+  background-color: #00D2C5;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-buttons button:hover {
+  background-color: #00a9a0;
+}

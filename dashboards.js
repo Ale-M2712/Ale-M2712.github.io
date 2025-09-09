@@ -6,14 +6,14 @@ fetch('dashboards/dashboards.json')
     data.forEach(dashboard => {
       const li = document.createElement('li');
 
+      // Verificamos que la ruta sea correcta
+      const imgPath = dashboard.imagen;
+
       li.innerHTML = `
-        <img src="${dashboard.imagen}" alt="${dashboard.titulo}" />
+        <img src="${imgPath}" alt="${dashboard.titulo}" />
         <div class="overlay">
           <h2>${dashboard.titulo}</h2>
           <p>${dashboard.descripcion}</p>
-          <div class="tags">
-            ${dashboard.tecnologias.map(tag => `<span>${tag}</span>`).join('')}
-          </div>
         </div>
       `;
 
