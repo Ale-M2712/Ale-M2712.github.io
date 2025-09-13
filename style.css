@@ -311,3 +311,33 @@ html {
 .contact-links a:hover {
   text-decoration: underline;
 }
+
+/* estilos para la foto de perfil */ 
+
+.perfil{
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #23145B;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 220px;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+  z-index: 10;
+  white-space: pre-line;
+}
+
+.perfil:hover .info{
+ visibility: visible;
+ opacity: 1;
+}
